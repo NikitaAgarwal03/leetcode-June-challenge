@@ -88,3 +88,78 @@ Example 2:</br>
 
 Input: ["H","a","n","n","a","h"]</br>
 Output: ["h","a","n","n","a","H"]</br>
+
+
+<strong> 5 June challenge </strong></br>
+Given an array w of positive integers, where w[i] describes the weight of index i, write a function pickIndex which randomly picks an index in proportion to its weight.</br>
+
+Note:</br>
+
+1 <= w.length <= 10000</br>
+1 <= w[i] <= 10^5</br>
+pickIndex will be called at most 10000 times.</br>
+
+Example 1:</br>
+
+Input: </br>
+["Solution","pickIndex"]</br>
+[[[1]],[]]</br>
+Output: [null,0]</br>
+
+Example 2:</br>
+
+Input: </br>
+["Solution","pickIndex","pickIndex","pickIndex","pickIndex","pickIndex"]</br>
+[[[1,3]],[],[],[],[],[]]</br>
+Output: [null,0,1,1,1,0]</br>
+
+Explanation of Input Syntax:</br>
+The input is two lists: the subroutines called and their arguments. Solution's constructor has one argument, the array w. pickIndex has no arguments. Arguments are always wrapped with a list, even if there aren't any.</br>
+
+
+<strong> 6 June challenge </strong></br>
+Suppose you have a random list of people standing in a queue. Each person is described by a pair of integers (h, k), where h is the height of the person and k is the number of people in front of this person who have a height greater than or equal to h. Write an algorithm to reconstruct the queue.</br>
+
+Note:</br>
+The number of people is less than 1,100.</br>
+
+Example</br>
+
+Input:</br>
+[[7,0], [4,4], [7,1], [5,0], [6,1], [5,2]]</br>
+
+Output:</br>
+[[5,0], [7,0], [5,2], [6,1], [4,4], [7,1]]</br>
+
+<strong> 7 June challenge </strong></br>
+You are given coins of different denominations and a total amount of money. Write a function to compute the number of combinations that make up that amount. You may assume that you have infinite number of each kind of coin.</br> 
+
+Example 1:</br>
+
+Input: amount = 5, coins = [1, 2, 5]</br>
+Output: 4</br>
+Explanation: there are four ways to make up the amount:</br>
+5=5</br>
+5=2+2+1</br>
+5=2+1+1+1</br>
+5=1+1+1+1+1</br>
+
+Example 2:</br>
+
+Input: amount = 3, coins = [2]</br>
+Output: 0</br>
+Explanation: the amount of 3 cannot be made up just with coins of 2.</br>
+
+Example 3:</br>
+
+Input: amount = 10, coins = [10] </br>
+Output: 1</br> 
+
+Note:</br>
+
+You can assume that</br>
+
+0 <= amount <= 5000</br>
+1 <= coin <= 5000</br>
+the number of coins is less than 500</br>
+the answer is guaranteed to fit into signed 32-bit integer</br>
